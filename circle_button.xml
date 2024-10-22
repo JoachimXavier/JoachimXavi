@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#FFFFFF"/> <!-- White background -->
+    <padding
+        android:left="12dp"
+        android:top="12dp"
+        android:right="12dp"
+        android:bottom="12dp" />
+    <!-- Gradient from lighter shade of grey to darker shade of grey -->
+    <gradient
+        android:startColor="#E0E0E0"
+        android:endColor="#B0B0B0"
+        android:angle="270"/>
+    <stroke
+        android:width="1dp"
+        android:color="#A9A9A9"/> <!-- Slightly darker grey for the border -->
+</shape>

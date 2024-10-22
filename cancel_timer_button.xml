@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="30dp" /> <!-- Same radius for consistency -->
+    <solid android:color="#9E9E9E" /> <!-- Grey color for Cancel Timer -->
+</shape>

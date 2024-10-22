@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"> <!-- Gradient background added -->
+
+    <EditText
+        android:id="@+id/timer_minutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter minutes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/countdown_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_below="@id/timer_minutes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/countdown_text"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/start_timer_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Timer"
+            android:background="@drawable/start_timer_button"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/cancel_timer_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel Timer"
+            android:background="@drawable/cancel_timer_button"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/voiceCommandButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/circle_button"
+        android:src="@drawable/ic_mic"
+        android:layout_below="@id/button_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Emergency Contact"
+        android:onClick="register"
+        android:layout_below="@id/voiceCommandButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:onClick="instruct"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Registered"
+        android:onClick="display_no"
+        android:layout_below="@id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/emergencyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Help"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/button3"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp"/>
+</RelativeLayout>
